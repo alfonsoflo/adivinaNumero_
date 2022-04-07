@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Adivinator</title>
+</head>
+
+<body>
+    <nav class="layout">
+        <a href="index.html"><img class="logo" src="img/logo2.png" alt="logo"></a>
+        <a class="navegacion__enlace" href="#">Sobre Mi</a>
+        <a class="navegacion__enlace" href="#">Tecnología</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>¿En qué número <span>entre el 0 y el 100</span> estoy pensando?</h1>
+
+        <form id="formulario">
+            <label for="numero">Introduce el número aquí: </label>
+            <input type="number" name="numero" id="numero" min="0" max="100">
+            <input type="submit" class="boton" value="Probar suerte" onclick="comprobar()">
+            <input type="button" class="boton boton__recarga oculto" value="Recargar número" onclick="recargar()">
+        </form>
+
+        <p class="total">Llevas un total de: <span id="contador"></span> intentos</p>
+        <p>Estos son los números introducidos hasta ahora:</p>
+        <ul class="numerosErroneos" type="square">
+
+        </ul>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
