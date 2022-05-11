@@ -1,3 +1,3 @@
 # adivinaNumero_
 
-BIENVENIDOS A UNO DE MIS PRIMEROS PROYECTOS.
+Puedes probar este proyecto aquí: https://adivinanumero-alfonsoflores.netlify.app/index.html
